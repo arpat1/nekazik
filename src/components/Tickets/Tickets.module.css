@@ -1,0 +1,14 @@
+.tickets{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    height: 50px;
+}
+
+.tick-count{
+    padding: 0 25px 0 5px;
+}
+
+.tick-img{
+    padding-bottom: 3px;
+}
