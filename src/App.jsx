@@ -1,10 +1,11 @@
 import './App.css'
+import Tickets from './components/Tickets/Tickets'
 
 function App() {
 
   return (
     <>
-      Hello World
+      <Tickets/>
     </>
   )
 }
