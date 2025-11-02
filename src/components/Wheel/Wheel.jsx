@@ -1,11 +1,16 @@
 import { useRef } from "react"
 import styles from "./Wheel.module.css"
+import { useState } from "react"
 
 const Wheel = () => {
     const wheel = useRef(0)
+    const [clickCount, setClickCount] = useState(0)
     const onClickHandle = () => {
-        let rotate_angle = Math.ceil(Math.random() * 3600)
-        wheel.current.style.transform = `rotate(${rotate_angle}deg)` 
+        if (clickCount != 2){
+            let rotateAngle = Math.ceil(Math.random() * 3600)
+            wheel.current.style.transform = `rotate(${rotateAngle}deg)`
+            setClickCount((prev)=>prev+1)
+        }
     }
     return (
         <div className={styles["container"]}>
