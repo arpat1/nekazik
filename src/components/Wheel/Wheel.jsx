@@ -5,9 +5,10 @@ import { useState } from "react"
 const Wheel = () => {
     const wheel = useRef(0)
     const [clickCount, setClickCount] = useState(0)
+    const controlPrizes = [50, 1307, 808]
     const onClickHandle = () => {
-        if (clickCount != 2){
-            let rotateAngle = Math.ceil(Math.random() * 3600)
+        if (clickCount != 3){
+            let rotateAngle = Math.ceil(3600+controlPrizes[clickCount])
             wheel.current.style.transform = `rotate(${rotateAngle}deg)`
             setClickCount((prev)=>prev+1)
         }

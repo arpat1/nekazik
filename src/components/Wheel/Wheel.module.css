@@ -22,7 +22,7 @@
     height: 250px;
     border: 1px solid black;
     border-radius: 50%;
-    transition: transform 5s ease-in-out;
+    transition: transform 10s ease-in-out;
     overflow: hidden;
 }
 .wheel span {
