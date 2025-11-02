@@ -6,7 +6,7 @@ const Tickets = () => {
     return (
         <header>
             <div className={styles["tickets"]}>
-                <img src="src/assets/ticket_icon.svg" width="15px" height="15px" className={styles["tick-img"]}/>
+                <img src="ticket_icon.svg" width="15px" height="15px" className={styles["tick-img"]}/>
                 <span className={styles["tick-count"]}>{tickCount}</span>
             </div>
         </header>
